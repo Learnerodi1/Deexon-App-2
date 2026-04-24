@@ -1,6 +1,5 @@
-// import { div } from "react-router-dom";
 import { useState } from "react";
-import logo from "./../../assets/deexon.png"
+import logo from "./../../assets/logoNoBg2.png"
 import { NavLink } from "react-router-dom";
 import clsx from "clsx";
 
@@ -86,7 +85,7 @@ const Header = () => {
                             <NavLink
                                 onClick={() => setMenuOpen(false)}
                                 to={link == "Home" ? "." : `${link.toLowerCase()}` && link == "Request Consultation" ? "consultation" : `${link.toLowerCase()}`}
-                                className={clsx("block", `${link == "Request Consultation" ? "text-yellow-400 " : "hover:text-yellow-400 "}`)}>
+                                className={({isActive}) => clsx("block", `${isActive ? activelink : ""}`, `${link == "Request Consultation" ? "text-yellow-400 " : "hover:text-yellow-400 "}`)}>
                                 {link}
                             </NavLink>
                         </li>

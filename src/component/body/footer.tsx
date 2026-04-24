@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom"
-import logo from "./../../assets/deexon.png"
+import logo from "./../../assets/logoNoBg2.png"
 import fblogo from "./../../assets/facebook.svg"
 import instalogo from "./../../assets/instagram.svg"
 import Tglogo from "./../../assets/telegram.svg"
@@ -19,7 +19,7 @@ const Footer = () => {
                     <h2 className="text-[20rem] text-white/10 font-bold leading-none">DXS</h2>
                 </div>
 
-                <div className="container mx-auto px-6 relative z-10">
+                <div className="px-6 relative z-10">
 
                     {/* Top Grid */}
                     <div className="grid grid-cols-2 md:grid-cols-12 gap-12 mb-20">
