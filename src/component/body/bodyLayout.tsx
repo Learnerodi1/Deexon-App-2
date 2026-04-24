@@ -6,7 +6,7 @@ export const BodyLayout = () => {
     return (
         <>
             <Header />
-            <main className="bg-black  pb-12  min-h-screen ">
+            <main className="bg-black min-h-screen ">
                 <Outlet />
             </main>
             <Footer />
