@@ -1,4 +1,4 @@
-import React, { Component, useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import logo from "./../../../assets/logoNoBg2.png"
 import clsx from "clsx";
 import bg1 from "./bg4.jpeg"
@@ -133,7 +133,7 @@ export const Home = () => {
                                     <div>
                                         <div className="flex justify-between items-start mb-10">
                                             <div className="flex gap-1">
-                                                {[...Array(5)].map((arry, i) => (
+                                                {[...Array(5)].map((_, i) => (
                                                     <span key={i} className={`text-lg ${i < item.rating ? "text-yellow-400" : "text-white/10"}`}>★</span>
                                                 ))}
                                             </div>

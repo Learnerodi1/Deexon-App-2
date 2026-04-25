@@ -1,5 +1,5 @@
 import './App.css'
-import { BodyLayout } from './component/body/bodyLayout'
+// import { BodyLayout } from './component/body/bodyLayout'
 import { AllRoutes } from './component/routes/routes'
 
 function App() {

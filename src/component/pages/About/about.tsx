@@ -1,5 +1,5 @@
-import clsx from "clsx"
-import { coreValues } from "./aboutInfo"
+// import clsx from "clsx"
+// import { coreValues } from "./aboutInfo"
 import programmer from "./programmer.jpg"
 import logo from "./../../../assets/logoNoBg.png"
 

@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom"
+import {  NavLink } from "react-router-dom"
 import logo from "./../../assets/logoNoBg2.png"
 import fblogo from "./../../assets/facebook.svg"
 import instalogo from "./../../assets/instagram.svg"

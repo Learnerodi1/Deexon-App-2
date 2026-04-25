@@ -1,5 +1,5 @@
-import React, { useState, Component } from "react"
-import clsx from "clsx"
+// import React, { useState, Component } from "react"
+// import clsx from "clsx"
 import { NavLink } from "react-router-dom"
 import bg1 from "./bgService1.jpeg"
 import bg2 from "./bgService2.jpeg"
