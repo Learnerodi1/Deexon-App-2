@@ -40,7 +40,7 @@ export const ServicesPage = () => {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6">
                         <NavLink
-                            to="consultation"
+                            to="/consultation"
                             className="px-10 py-5 bg-yellow-400 text-black text-[11px] font-bold uppercase tracking-widest hover:bg-white transition-all duration-500 text-center"
                         >
                             Free Consultation
@@ -182,7 +182,7 @@ export const ServicesPage = () => {
                         Let’s talk about how we can help you reach your goals with the right technology.
                     </p>
                     <NavLink
-                        to="consultation"
+                        to="/consultation"
                         className="inline-block px-12 py-6 bg-yellow-400 text-black text-[11px] font-bold uppercase tracking-[0.4em] hover:bg-white transition-all duration-500"
                     >
                         Get Free Consultation
