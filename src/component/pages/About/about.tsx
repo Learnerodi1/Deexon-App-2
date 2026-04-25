@@ -1,12 +1,16 @@
 import clsx from "clsx"
 import { coreValues } from "./aboutInfo"
 import programmer from "./programmer.jpg"
+import logo from "./../../../assets/logoNoBg.png"
 
 export const AboutPage = () => {
     return (
         <>
             {/* Hero Section */}
             <section className="relative pt-40 pb-32 border-b border-white/5">
+                <div className="absolute left-0 right-0 top-4 opacity-[0.4] pointer-events-none select-none">
+                    <img src={logo} alt="" width={1200} height={1200} />
+                </div>
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid lg:grid-cols-12 gap-16 items-center">
 
