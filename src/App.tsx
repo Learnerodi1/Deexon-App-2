@@ -1,4 +1,5 @@
 import './App.css'
+import { ThemeContextProvider } from './component/context/ThemeContext'
 // import { BodyLayout } from './component/body/bodyLayout'
 import { AllRoutes } from './component/routes/routes'
 
@@ -7,7 +8,9 @@ function App() {
 
   return (
     <>
-    <AllRoutes/>
+    <ThemeContextProvider>
+      <AllRoutes/>
+    </ThemeContextProvider>
     </>
   )
 }

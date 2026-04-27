@@ -1,4 +1,22 @@
 @import "tailwindcss";
+/* @custom-variant dark (&:is(.dark *));
+@custom-variant light (&:is(.light *)); */
+
+@theme {
+    --color-primary: #EDB700;
+    --color-secondary: #000000;
+    --color-ftext: #FFFFFF;
+  }
+.dark {
+    --color-primary: #EDB700;
+    --color-secondary: #000000;
+    --color-ftext: #ecebe8;
+  }
+  .light {
+    --color-primary: #f1b80d;
+    --color-secondary: #ecebe8;
+    --color-ftext: #000000;
+  }
 
 @keyframes revealUp {
   from {
@@ -15,6 +33,7 @@
 @keyframes marquee {
   0% {
     transform: translateX(0);
+    color: #f0eadd;
   }
 
   100% {

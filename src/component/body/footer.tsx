@@ -5,18 +5,21 @@ import instalogo from "./../../assets/instagram.svg"
 import Tglogo from "./../../assets/telegram.svg"
 import Xlogo from "./../../assets/twitter-original.svg"
 import Whatlogo from "./../../assets/whatsapp.svg"
+import { UseTheme } from "../context/useTheme"
+import clsx from "clsx"
 
 
 const Footer = () => {
+    let context = UseTheme()
     const currentYear = new Date().getFullYear();
 
     return (
         <>
-            <footer className="bg-black pt-24 pb-12 border-t border-white/5 relative overflow-hidden">
+            <footer className={clsx("bg-secondary pt-24 pb-12 border-t border-ftext/5 relative overflow-hidden", `${!context?.theme ? "dark": "light"}`)}>
 
                 {/* Decorative Background */}
                 <div className="absolute -bottom-24 -right-24 opacity- pointer-events-none select-none">
-                    <h2 className="text-[20rem] text-white/10 font-bold leading-none">DXS</h2>
+                    <h2 className="text-[20rem] text-ftext/10 font-bold leading-none">DXS</h2>
                 </div>
 
                 <div className="px-6 relative z-10">
@@ -34,12 +37,12 @@ const Footer = () => {
                                     height={40}
                                     className="h-10 w-auto"
                                 />
-                                <span className="text-xs font-bold tracking-[0.4em] uppercase text-white">
+                                <span className="text-xs font-bold tracking-[0.4em] uppercase text-ftext">
                                     Deexon Solutions
                                 </span>
                             </div>
 
-                            <p className="text-white text-sm leading-relaxed max-w-xs">
+                            <p className="text-ftext text-sm leading-relaxed max-w-xs">
                                 Engineering high-performance technology ecosystems and elite engineering talent for the global frontier.
                             </p>
 
@@ -71,7 +74,7 @@ const Footer = () => {
 
                         {/* Navigation */}
                         <div className="col-span-1 md:col-span-2 space-y-6">
-                            <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-yellow-400">
+                            <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">
                                 Navigation
                             </h4>
                             <ul className="space-y-4">
@@ -79,7 +82,7 @@ const Footer = () => {
                                     <li key={link}>
                                         <NavLink
                                             to={link === "Home" ? "/" : `/${link.toLowerCase()}`}
-                                            className="text-sm text-white hover:text-yellow-400 transition-colors"
+                                            className="text-sm text-ftext hover:text-primary transition-colors"
                                         >
                                             {link}
                                         </NavLink>
@@ -90,13 +93,13 @@ const Footer = () => {
 
                         {/* Solutions */}
                         <div className="col-span-1 md:col-span-3 space-y-6">
-                            <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-yellow-400">
+                            <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">
                                 Solutions
                             </h4>
                             <ul className="space-y-4">
                                 {["Web Development", "Network Installation", "Digital Branding",].map((service) => (
                                     <li key={service}>
-                                        <span className="text-sm text-white hover:text-yellow-400 transition-colors cursor-pointer">
+                                        <span className="text-sm text-ftext hover:text-primary transition-colors cursor-pointer">
                                             {service}
                                         </span>
                                     </li>
@@ -106,7 +109,7 @@ const Footer = () => {
 
                         {/* Quick Links */}
                         <div className="col-span-2 md:col-span-3 space-y-6">
-                            <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-yellow-400">
+                            <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">
                                 Quick Links
                             </h4>
                             <ul className="space-y-4">
@@ -114,7 +117,7 @@ const Footer = () => {
                                     <li key={link}>
                                         <div
                                             id="/consultation"
-                                            className="text-sm text-white hover:text-yellow-400 transition-colors"
+                                            className="text-sm text-ftext hover:text-primary transition-colors"
                                         >
                                             {link}
                                         </div>
@@ -126,18 +129,18 @@ const Footer = () => {
                     </div>
 
                     {/* Bottom */}
-                    <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div className="pt-12 border-t border-ftext/5 flex flex-col md:flex-row justify-between items-center gap-6">
 
-                        <p className="text-[10px] font-mono text-white uppercase tracking-widest">
+                        <p className="text-[10px] font-mono text-ftext uppercase tracking-widest">
                             &copy; {currentYear} Deexon Solutions. All rights reserved.
                         </p>
-                        <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-white hover:text-white transition-colors cursor-pointer">
+                        <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-ftext hover:text-ftext transition-colors cursor-pointer">
                             SLA Status
                         </span>
 
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                            <span className="text-[9px] font-mono text-white uppercase tracking-widest">
+                            <span className="text-[9px] font-mono text-ftext uppercase tracking-widest">
                                 Systems Operational
                             </span>
                         </div>
